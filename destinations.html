@@ -1,0 +1,30 @@
+ <div class="location-ask">
+        <span class="where-to">Where to?</span> <span class="required">(Required) </span> <br />
+    <div class="booking">
+
+            <label class="location-label"></label>
+            <input type="text" class="location" placeholder="City, state, location, or airport" required>
+
+            <button type="submit" class="btn date" onclick="dateOpenPopup()">Date</button>
+            <div class="date-popup" id="date-popup">
+                <h2>Select Date</h2>
+                <input type="text" id="datepicker">
+                <button type="button" onclick="dateClosePopup()">OK</button>
+            </div>
+
+            <button type="submit" class="btn room" onclick="roomOpenPopup()">Rooms & Guests</button>
+            <div class="room-popup" id="room-popup">
+                <h2>Rooms and Guests</h2>
+                <div class="container-room">
+                <form>
+                    <label for="rooms">Rooms:</label>
+                    <input type="number" id="rooms" value=1><br><br>
+                    <label for="adults">Adults:</label>
+                    <input type="number" id="adults" value=1><br><br>
+                    <label for="kids">Kids:</label>
+                    <input type="number" id="kids" value=0><br><br>
+                </form>
+                <button type="button" onclick="roomClosePopup()">OK</button>
+
+            </div>
+            </div>
